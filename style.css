@@ -11,20 +11,18 @@ li {
 }
 a {
     text-decoration: none;
-    color: #ffffff;
 }
 ul {
     list-style: none;
 }
 
 .wrapper { 
-    background-color:#282e40;
     max-width: 1600px;
     margin: 0 auto;
     position: relative;
     min-height: 100%;
     font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+    color: #031629;
     display: grid;
     grid-template: minmax(100px, auto) 1fr minmax(70px, auto) / 1fr;
     grid-template-areas: 
@@ -35,18 +33,28 @@ ul {
 .header { 
     align-items: center;
     grid-area: header;
-    background-color: #658be4;
     padding: 15px;
     display: grid;
-    grid-template: 1fr / 1fr minmax(auto, 400px) minmax(auto, 1000px) 1fr;
+    grid-template: 1fr / 1fr minmax(auto, 600px) minmax(auto, 1000px) 1fr;
 }
+
 .header_logo {
-    background: url(/img/logo.png) 0 0/100% 100% no-repeat;
+    background: url(/img/gerb-italy.jpg)0 0 / 100% 100% no-repeat;
     border-radius: 50%;
     width: 70px;
     height: 70px;
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
+    transition: 1s ease;
+    opacity: .5;
  }
+ .header_logo:hover {
+    opacity: 1;
+ }
+.header h1 {
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-weight: 500;
+}
 .header_menu {
     grid-column: 3 / 4;
  }
@@ -55,47 +63,62 @@ ul {
     grid-auto-flow: column;
     justify-items: end;
  }
-.header_link { }
+.header_link {
+    font-size: 25px;
+    font-weight: 900;
+ }
 .header_burger { }
 .main { 
+    background: url(/img/Sunrises_and_sunsets_Cathedral_Italy_Piazza_del_601284_1280x903.jpg) 0 0/100% 100% no-repeat;
     grid-area: main;
-    padding:  30px 15px;
     display: grid;
-    grid-template: 1fr / 1fr minmax(auto, 400px) minmax(auto, 1000px) 1fr;
+    grid-template: 1fr / 1fr minmax(200px, auto) minmax(auto, 1400px) 1fr;
 }
 .sidebar { 
-    background-color: #005bb1;
     grid-column: 2 / 3;
     padding: 10px 20px;
 }
 .sidebar_menu { 
-
 }
 .sidebar_list { }
 .sidebar_list li {
+    font-size: 24px;
     margin: 0px 0px 15px 0px;
 }
 .sidebar_link {
-    color: #fff;
+    color: #090218;
     font-size: 20px;
+    text-transform: uppercase;
  }
 .content { 
     grid-column: 3 / 4;
     padding: 0px 0px 0px 20px;
 }
-.content_title { }
-.content_gallery { }
+.content_title {
+    position: relative;
+    z-index: 2;
+    margin: 10px 0px 30px 0px;
+    text-transform: uppercase;
+    opacity: .8;
+ }
+.content_gallery {
+    margin: 0px 0px 30px 0px;
+ }
 .gallery_title { }
 .gallery_items {
     display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
 .gallery_item {
     position: relative;
     padding: 0px 0px 85% 0px;
  }
 .gallery_item img {
+    border-radius: 2%;
+    transition: 1s ease;
+    opacity: .4;
     position: absolute;
     top: 0;
     left: 0;
@@ -103,21 +126,77 @@ ul {
     height: 100%;
     object-fit: cover;
 }
+.gallery_item :hover {
+    overflow: hidden;
+    opacity: 1 ;
+    transform: scale(1.1);
+ }
+.gallery_item img:hover {
+}
 .gallery_item_big { 
-    grid-column: span 1.5;
+    grid-column: span 2;
     grid-row: span 2;
 }
-.content_products { }
+.content_products {
+    padding: 5px 5px;
+ }
 .products { }
-.products_title { }
-.products_items { }
-.products_item { }
-.products_image { }
-.products_name { }
-.products_button { }
+.products_title { 
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.products_items {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ }
+.products_item { 
+    display: grid;
+    grid-auto-flow: row;
+    grid-template: auto 1fr minmax(40px, auto) / 1fr;
+}
+.products_image {
+    position: relative;
+    padding: 0px 0px 90% 0px;
+    margin: 0px 0px 20px 0px;
+}
+.products_image img { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s ease;
+}
+.products_name {
+    font-size: 24px;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 20px;
+ }
+.products_button {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #005bb1;
+    padding: 0px 20px;
+    line-height: 40px;
+    justify-self: start;
+}
 .footer {
+    align-items: center;
     grid-area: footer;
     background-color: #994a09;
+    display: grid;
+    padding: 15px;
+    grid-template: 1fr / 1fr minmax(auto, 600px) minmax(auto, 1000px) 1fr;
  }
-.copy { }
-.footer_text { }
+.footer_copy { 
+    grid-column: 2 / 3;
+}
+.footer_text { 
+    text-align: right;
+    grid-column: 3 / 4;
+}
