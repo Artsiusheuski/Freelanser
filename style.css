@@ -15,7 +15,6 @@ a {
 ul {
     list-style: none;
 }
-
 .wrapper { 
     max-width: 1600px;
     margin: 0 auto;
@@ -39,7 +38,7 @@ ul {
 }
 
 .header_logo {
-    background: url(/img/gerb-italy.jpg)0 0 / 100% 100% no-repeat;
+    background: url(/img/gerb-italy.jpg)0 0 / 100% 100% no-repeat ;
     border-radius: 50%;
     width: 70px;
     height: 70px;
@@ -63,13 +62,42 @@ ul {
     grid-auto-flow: column;
     justify-items: end;
  }
+.header_list li {
+    position: relative;
+ }
 .header_link {
     font-size: 25px;
     font-weight: 900;
  }
+
+/* Drop-down menu */
+
+ .sub_menu {
+    position: absolute;
+    clip:rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+ }
+ .sub_menu a {
+    white-space: nowrap;
+    display: block;
+ } 
+ .sub_menu a:hover {
+    background-color: pink;
+ }
+li:focus-within > .sub_menu,
+li:hover .sub_menu {
+    clip:auto;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
 .header_burger { }
 .main { 
     background: url(/img/Sunrises_and_sunsets_Cathedral_Italy_Piazza_del_601284_1280x903.jpg) 0 0/100% 100% no-repeat;
+    background-size: cover;
     grid-area: main;
     display: grid;
     grid-template: 1fr / 1fr minmax(200px, auto) minmax(auto, 1400px) 1fr;
@@ -110,7 +138,6 @@ ul {
     gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-
 .gallery_item {
     position: relative;
     padding: 0px 0px 85% 0px;
