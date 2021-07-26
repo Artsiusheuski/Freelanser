@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flexatron</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="/skript.js"></script>
+    <!-- <script src="/skript.js"></script> -->
 </head>
 <body class="wrapper">
   <header class="header">
@@ -21,7 +21,7 @@
           <a class="header_link" href="/register.html" target="_blank">registration</a>
         </li>
         <li>
-          <a class="header_link" href="">contact</a>
+          <a class="header_link" href="#">contact</a>
              <ul class="sub_menu">
                 <li><a href="tel:(+91) 987 654 3210">(+91) 987 654 3210</a></li>
                 <li><a href="mailto:name@domain.com">name@domain.com</a></li>
@@ -39,14 +39,24 @@
         </li>
       </ul>
       <div class="header_burger">
+        <input id="burger" type="checkbox">
+        <label class="burger_btn" for="burger">
         <span></span>
+        </label>
+         <ul class="menu_box">
+           <li><a class="menu_item" href="#">covid-19</a></li>
+           <li><a class="menu_item" href="#">registration</a></li>
+           <li><a class="menu_item" href="#">contact</a></li>
+           <li><a class="menu_item" href="#">instagram</a></li>
+           <li><a class="menu_item" href="#">telegram</a></li>
+         </ul>
       </div>
     </nav>
   </header>
   <main class="main">
     <aside class="sidebar">
-      <nav class="sidebar_menu">
-        <ul class="sidebar_list">
+      <nav>
+        <ul>
           <li>
             <a href="/documents.docx" class="sidebar_link">Documents</a>
           </li>
@@ -95,7 +105,7 @@
           </div>
         </div>
       </section>
-      <section class="content_products products">
+      <section class="content_products">
         <h2 class="products_title">Choose a tour</h2>
         <div class="products_items">
           <div class="products_item">
