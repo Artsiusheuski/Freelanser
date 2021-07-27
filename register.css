@@ -1,5 +1,5 @@
 body {
-    background: url(/img/regist.jpg) 0 0/100% no-repeat;
+    background: url(/img/regist.jpg) 0 0/100% 100% no-repeat;
 }
 .form { 
     display: flex;
