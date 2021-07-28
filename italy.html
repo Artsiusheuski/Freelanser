@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flexatron</title>
+    <title>Italy Grand Final</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="/skript.js"></script>
 </head>
 <body class="wrapper">
   <header class="header">
@@ -15,40 +14,50 @@
     <nav class="header_menu">
       <ul class="header_list">
         <li>
-          <a class="header_link" href="https://www.aifa.gov.it/emergenza-covid-19" target="_blank">covid-19</a>
+          <a class="header_link" href="https://www.aifa.gov.it/emergenza-covid-19" target="_blank" title="information covid-19">covid-19</a>
         </li>
         <li>
-          <a class="header_link" href="/register.html" target="_blank">registration</a>
+          <a class="header_link" href="/forma.html" target="_blank" title="registration on the website">registration</a>
         </li>
         <li>
-          <a class="header_link" href="">contact</a>
+          <a class="header_link" href="#" title="contact us">contact</a>
              <ul class="sub_menu">
                 <li><a href="tel:(+91) 987 654 3210">(+91) 987 654 3210</a></li>
                 <li><a href="mailto:name@domain.com">name@domain.com</a></li>
              </ul>
         </li>
         <li>
-          <a class="header_link" href="https://www.instagram.com/i.arcisz/" target="_blank">
+          <a href="https://www.instagram.com/i.arcisz/" target="_blank">
             <img src="/img/instagram_icon.png" title="instagram" alt="">
           </a>
         </li>
         <li>
-          <a class="header_link" href="https://t.me/Artsiusheuski" target="_blank">
+          <a href="https://t.me/Artsiusheuski" target="_blank">
             <img src="/img/telegram_icon.png" title="telegram" alt="">
           </a>
         </li>
       </ul>
       <div class="header_burger">
+        <input id="burger" type="checkbox">
+        <label class="burger_btn" for="burger">
         <span></span>
+        </label>
+         <ul class="menu_box">
+           <li><a class="menu_item" href="#">covid-19</a></li>
+           <li><a class="menu_item" href="#">registration</a></li>
+           <li><a class="menu_item" href="#">contact</a></li>
+           <li><a class="menu_item" href="#">instagram</a></li>
+           <li><a class="menu_item" href="#">telegram</a></li>
+         </ul>
       </div>
     </nav>
   </header>
   <main class="main">
     <aside class="sidebar">
-      <nav class="sidebar_menu">
-        <ul class="sidebar_list">
+      <nav>
+        <ul>
           <li>
-            <a href="/documents.docx" class="sidebar_link">Documents</a>
+            <a href="/documents.docx" class="sidebar_link" title="Downlad doc for VISA">Documents</a>
           </li>
           <li>
             <a href="https://www.history.com/tag/italy" class="sidebar_link" target="_blank">History</a>
@@ -95,58 +104,59 @@
           </div>
         </div>
       </section>
-      <section class="content_products products">
-        <h2 class="products_title">Choose a tour</h2>
-        <div class="products_items">
-          <div class="products_item">
-             <a href="" class="products_image">
+      <section class="content_city">
+        <h2 class="city_title">Choose a tour</h2>
+        <div class="city_items">
+          <div class="city_item">
+             <span class="city_image">
               <img src="/img/milan.jpg" alt="">
-            </a>
-            <a href="" class="products_name">Milan</a>
-            <a href="" class="products_button">select</a>
+             </span>
+            <a href="#" class="city_name">Milan</a>
+            <a href="#" class="city_button">select</a>
           </div>
-          <div class="products_item">
-            <a href="" class="products_image">
+          <div class="city_item">
+            <span class="city_image">
               <img src="/img/roma.jpg" alt="">
-            </a>
-            <a href="" class="products_name">Roma</a>
-            <a href="" class="products_button">select</a>
+            </span>
+            <a href="#" class="city_name">Roma</a>
+            <a href="#" class="city_button">select</a>
           </div>
-          <div class="products_item">
-            <a href="" class="products_image">
+          <div class="city_item">
+            <span class="city_image">
               <img src="/img/Bologna.jpg" alt="">
-            </a>
-            <a href="" class="products_name">Bologna</a>
-            <a href="" class="products_button">select</a>
+            </span>
+            <a href="#" class="city_name">Bologna</a>
+            <a href="#" class="city_button">select</a>
           </div>
-          <div class="products_item">
-            <a href="" class="products_image">
+          <div class="city_item">
+            <span class="city_image">
               <img src="/img/venice.jpg" alt="">
-            </a>
-            <a href="" class="products_name">Venice</a>
-            <a href="" class="products_button">select</a>
+            </span>
+            <a href="#" class="city_name">Venice</a>
+            <a href="#" class="city_button">select</a>
           </div>
-          <div class="products_item">
-            <a href="" class="products_image">
+          <div class="city_item">
+            <span class="city_image">
               <img src="/img/neapole.jpg" alt="">
-            </a>
-            <a href="" class="products_name">Napoli</a>
-            <a href="" class="products_button">select</a>
+            </span>
+            <a href="#" class="city_name">Napoli</a>
+            <a href="#" class="city_button">select</a>
           </div>
         </div>
       </section>
     </section>
   </main>
-
   <footer class="footer">
+    <ul class="footer_contact">
+      <li><a href="tel:(+91) 987 654 3210">(+91) 987 654 3210</a></li>
+      <li><a href="mailto:name@domain.com">name@domain.com</a></li>
+    </ul>
     <div class="footer_copy">
-      Copy.  2022
+      Copyright © 2022 
     </div>
     <div class="footer_text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, deserunt.
+      Artsiusheuski I.
     </div>
   </footer>
-
 </body>
-
 </html>
