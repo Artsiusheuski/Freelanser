@@ -22,13 +22,19 @@
     } 
 }
 .sidebar li {
-    font-size: 24px;
-    margin: 0px 0px 15px 0px;
+    position: relative;
+    margin-bottom: 25px;
+    transition: .5s ease;
 }
+
 .sidebar_link {
     color: #090218;
-    font-size: 20px;
+    font-size: 24px;
     text-transform: uppercase;
+ }
+ .sidebar li:hover {
+    transform: translate3d(5px,5px,5px); 
+    background-color: rgb(255, 255, 255, 0.5);
  }
 .content { 
     grid-column: 3 / 4;
@@ -76,7 +82,7 @@
     object-fit: cover;
 }
 .gallery_item :hover {
-    opacity: 1 ;
+    opacity: 1;
  }
 .gallery_item_big { 
     grid-column: span 2;
@@ -93,62 +99,60 @@
         opacity: 1;
     } 
 }
-
-.content_products {
+.content_city {
     padding: 5px 15px;
  }
-.products_title { 
+.city_title { 
     text-transform: uppercase;
     font-size: 30px;
     position: relative;
     z-index: 2;
 }
 @media(max-width:992px) {
-    .products_title {
+    .city_title {
     color: white;
     }
 }
-.products_items {
+.city_items {
     display: grid;
     column-gap: 15px;
     row-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
  }
-.products_item { 
+.city_item { 
     display: grid;
     grid-auto-flow: row;
     grid-template: auto 1fr minmax(40px, auto) / 1fr;
-    transition: 1s ease;
-}
-.products_item:hover {
-    transform: scale(1.1);
-    z-index: 1;
 }
 @media(max-width:565px) {
-    .products_item:hover {
+    .city_item:hover {
     transform: scale(1);
     }
 }
-.products_image {
+.city_image {
     position: relative;
     padding: 0px 0px 90% 0px;
     margin: 0px 0px 20px 0px;
 }
-.products_image img { 
+.city_image img { 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    transition: 1s ease;
 }
-
-.products_name {
+.city_image img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+.city_name {
     font-size: 24px;
     color: #fff;
     line-height: 30px;
     margin-bottom: 20px;
  }
-.products_button {
+.city_button {
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -156,4 +160,8 @@
     padding: 0px 20px;
     line-height: 40px;
     justify-self: start;
+    transition: .5s ease;
+}
+.city_button:hover {
+    background-color: brown;
 }

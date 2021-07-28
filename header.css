@@ -40,7 +40,13 @@
 .header_list li {
     position: relative;
  }
-.header_link {
+.header_link{
+    text-transform: uppercase;
     font-size: 25px;
     font-weight: 900;
+    transition: .3s ease;
  }
+ .header_link:hover {
+    background: rgb(165, 42, 42, .5);
+ }
+ 
