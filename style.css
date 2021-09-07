@@ -1,10 +1,10 @@
 /* PULT */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url(/style/header.css);
-@import url(/style/main.css);
-@import url(/style/footer.css);
-@import url(/style/menu.css);
+@import url(style/header.css);
+@import url(style/main.css);
+@import url(style/footer.css);
+@import url(style/menu.css);
 
 * {
     box-sizing: border-box;
