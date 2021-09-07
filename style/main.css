@@ -1,7 +1,7 @@
 /* MAIN */
 
 .main { 
-    background: url(img/Sunrises_and_sunsets_Cathedral_Italy_Piazza_del_601284_1280x903.jpg) 0 0/100% 100% no-repeat;
+    background: url(//img/Sunrises_and_sunsets_Cathedral_Italy_Piazza_del_601284_1280x903.jpg) 0 0/100% 100% no-repeat;
     background-size: cover;
     grid-area: main;
     display: grid;
